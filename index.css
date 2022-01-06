@@ -1,0 +1,766 @@
+	
+	.large {
+		display: block;
+	}
+	
+	.small {
+		display: none;
+	}
+	
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body, img, html {
+		height: 100%;
+		width: 100%;
+	}
+
+	body {
+		margin: 0%;
+		background-color: black;
+	}
+	
+	.menuBar {
+		position: sticky;
+		top: 0;
+		height: 12.5%;
+		float: left;
+	}
+
+	#menuToggleContainer {
+		width: 5%;
+		padding-left: 2%;
+		padding-top: 4%;
+		z-index: 5;		
+	}
+	
+	#menuToggle {
+		display: none;
+	}
+	
+	#menuIconOpen {
+		display: block;
+	}
+	
+	#menuIconClose {
+		display: none;
+	}
+	
+	#navContainer {
+		display: none;
+		text-align: center;
+		margin-top: 0%;
+		width: 78%;
+		border-bottom: 5px solid black;
+		z-index: 4;		
+	}
+
+	
+	#toggleView {
+		display: none;
+		text-align: center;
+		font-size: 220%;
+	}
+	
+	#toggleClose {
+		display: none;
+		text-align: left;
+		font-size: 220%;
+	}
+	
+	.navButtons {
+		height: 80%;
+		width: 100%;
+		margin-top: 1.5%;
+		font-family: 'DM Serif Display', serif;
+		font-size: 250%;
+		text-align: right;
+	}
+	
+	#statementNav {
+		padding-top: 0%;
+	}
+
+	.navLinks {
+		color: black;
+		text-decoration: none;
+		font-style: italic;
+		position: relative;
+		top: 20%;
+		padding-right: 2%;
+		z-index: 3;
+	}
+	
+	.itemContainer {
+		background-size: cover;
+	}
+	
+	.itemTitle {
+		font-family: 'DM Serif Display', serif;
+		font-size: 500%;
+		padding: 20% 0px 0px 10%;
+	}
+	
+	.itemContent {
+		padding: 15% 20% 30% 20%;
+	}
+	
+	#introContainer {
+		background-image: url("documents/headline17.jpg");
+		background-attachment: scroll;
+		background-position: center;
+	}
+	
+	#intro {
+		color: black;
+		font-style: italic;
+		font-size: 700%;
+		padding: 55% 0px 12% 10%;
+	}
+	
+	#statementContainer {
+		background-image: url("documents/state_background2.jpg");
+	}
+	
+	#statementContent {
+		font-size: 200%;
+		text-align: justify;
+	}
+
+	.continue1 {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	
+	.arrowContainer {
+		width: 3%;
+		margin: 0% auto 2% auto;
+	}
+	
+	.arrow {
+		height: 100%;
+		width: 100%;
+	}
+	
+	/* projects */
+	#projectsContainer {
+		background-image: url("documents/projectsBack1.jpg");
+		background-position: left center;
+		background-size: cover;
+		height: 2600px;
+		width: 100%;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		position: relative;
+	}
+	
+	#projectsTitle {
+		color: white;
+	}
+
+	#projectContainer4 {
+		width: 100%;
+		background-color: lightblue;
+		text-align: center;
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+	
+	#projectContent4 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 300%;
+		letter-spacing: 3px;
+		font-style: italic;
+	}
+	
+	.projectContainer.left{
+		float: left;
+		width: 50%;
+		margin: 0px auto 0px 6%;
+	}
+	
+	.projectContainer.right {
+		float: right;
+		width: 50%;
+	}
+	
+	#projectContainer1 {
+		position: absolute;
+		z-index: 1;
+		left: -7%;
+		float: left;
+		width: 45%;
+		margin: 0px auto 0px 6%;
+	}
+	
+	#projectContainer2 {
+		margin-top: 10%;
+		position: absolute;
+		margin-bottom: 10%;
+		right: 15%;
+	}
+	
+	#projectContainer3 {
+		transition: 0.5s;
+		position: relative;
+		left: -8%;
+		margin-top: 25%;
+		color: black;
+		z-index: 2;
+	}
+		
+	.projectTitle {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 250%;
+		color: white;
+		transition: 0.5s;
+		background-color: rgba(0, 5, 20, 1);
+	}
+	
+	#projectTitle1 {
+		padding-left: 10%;
+		border-radius: 0px 20px 20px 0px;
+		z-index: 3;
+	}
+	
+	#projectTitle2 {
+		margin-top: 0%;
+		padding-right: 10%;
+		text-align: right;
+		border-radius: 20px 0px 0px 20px;
+		z-index: 2;
+		width: 75%;
+		position: relative;
+		right: -50%;
+	}
+	
+	#projectTitle3 {
+		z-index: 1;
+		width: 50%;
+		position: relative;
+		padding-left: 10%;
+		border-radius: 0px 15px 15px 0px;
+	}
+	
+	.projectContent {
+		transition: 1s;
+		overflow: auto;
+		position: relative;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 300%;
+		padding: 2%;
+		width: 130%;
+	}
+	
+	#projectContent1 {
+		left: -90%;
+	}
+	
+	#projectContent2 {
+		right: -90%;
+	}
+	
+	#projectContent3 {
+		left: -90%;
+	}
+	
+	.projectDesc {
+		width: 60%;
+		background-color: lightblue;
+		transition: 1s;
+	}
+	
+	.projectDesc.left {
+		float: left;
+		padding: 2% 2% 2% 6%;
+	}
+	
+	.projectDesc.right {
+		float: right;
+		text-align: right;
+		padding: 2% 6% 2% 2%;
+	}
+	
+	.projectDesc a {
+		color: rgb(4, 12, 92);
+	}
+	
+	.projectArrows {
+		padding: 5%;
+		background-color: rgba(0, 5, 20, 1);
+	}
+	
+	.projectArrows.left {
+		overflow: auto;
+		border-radius: 0px 50px 50px 0px;
+	}
+	
+	.projectArrows.right {
+		overflow: hidden;
+		border-radius: 50px 0px 0px 50px;
+	}
+	
+	.projectArrow {
+		margin-top: 0%;
+		width: 50px;
+		height: 50px;
+	}
+	
+	.projectArrow.left {
+		float: right;
+	}
+	
+	.projectArrow.right {
+		float: left;
+	}
+	
+	.openArrow {
+		display: block;
+	}
+	
+	.closeArrow {
+		display: none;
+	}
+	
+
+	/* resume */
+	
+	#resumeContainer {
+		background-image: url("documents/screen17.jpg");
+		background-attachment: fixed;
+		background-position: bottom center;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	#resumeContainer .formatA, #resumeContainer .formatB, #resumeContainer .formatC, #resumeContainer .formatD {
+		display: none;
+	}
+	
+	#resumeContent {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		padding-bottom: 20%;
+		position: relative;
+		z-index: 2;
+	}
+	
+	#resumeContent a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	.resumeSection {
+		margin-bottom: 10%;
+	}
+	
+	.sectionTitle {
+		font-family: "Oswald", sans-serif;
+		font-weight: bold;
+		font-size: 400%;
+	}
+	
+	.sectionContent {
+		font-size: 270%;
+	}
+	
+	.jobTitle {
+		font-size: 80%;
+	}
+	
+	.jobContainer {
+		padding-left: 10%;
+	}
+	
+	#fullResume {
+		font-size: 200%;
+	}
+	
+	#resumeImage img {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#resumeImage {
+		width: 55%;
+		position: absolute;
+		top: 85%;
+		left: -1%;
+		z-index: 1;
+		opacity: .53;
+	}
+
+@media only screen and (max-width: 1536px) {
+	.projectDesc.large {
+		display: none;
+	}
+	
+	.projectDesc.small {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#intro {
+		padding: 120% 0% 12% 10%;
+	}
+	
+	#statementContent {
+		padding: 20% 15% 20% 15%;
+	}
+}
+
+@media only screen and (max-width: 896px) {
+	.large {
+		display: none;
+	}
+	
+	.small {
+		display: initial;
+	}
+	
+	#menuToggleContainer {
+		width: 5%;
+		padding-left: 2%;
+		padding-top: 4%;
+		z-index: 5;		
+	}
+	
+	#menuToggle {
+		display: block;
+	}
+	
+	.toggleText {
+		display: block;
+		font-family: 'Merriweather Sans', sans-serif;
+		line-height: 100%;
+	}
+	
+	#toggleView {
+		display: block;
+		text-align: center;
+		font-size: 90%;
+	}
+	
+	#toggleClose {
+		display: none;
+		text-align: left;
+		font-size: 85%;
+	}
+	
+	#navContainer {
+		display: none;
+		text-align: center;
+		margin-top: 0%;
+		width: 78%;
+		border-bottom: 1px solid black;
+		z-index: 4;		
+	}
+	
+	.navButtons {
+		font-size: initial;
+	}
+	
+	.itemTitle {
+		font-family: 'DM Serif Display', serif;
+		font-size: 35px;
+		padding: 20% 0px 0px 10%;
+	}
+	
+	#introContainer {
+		background-image: url("documents/headline16.jpg");
+		background-attachment: fixed;
+		background-position: center;
+	}
+	
+	#intro {
+		color: black;
+		font-style: italic;
+		font-size: 45px;
+		padding: 55% 0px 12% 10%;
+	}
+	
+	#statementContent {
+		font-size: initial;
+	}
+	
+	#projectsContainer {
+		background-image: url("documents/projectsBack1.jpg");
+		background-position: left center;
+		background-size: cover;
+		height: 1400px;
+		width: 100%;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		position: relative;
+	}
+	
+	#projectContent4 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 16px;
+		letter-spacing: 3px;
+		font-style: italic;
+	}
+	
+	.projectTitle {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+		color: white;
+		transition: 0.5s;
+		background-color: rgba(0, 5, 20, 1);
+	}
+	
+	#projectTitle1 {
+		padding-left: 10%;
+		border-radius: 0px 15px 15px 0px;
+		z-index: 3;
+	}
+	
+	#projectTitle2 {
+		margin-top: 12%;
+		margin-bottom: 5%;
+		padding-right: 10%;
+		text-align: right;
+		border-radius: 15px 0px 0px 15px;
+		z-index: 2;
+		width: 75%;
+		position: relative;
+		right: -50%;
+	}
+	
+	#projectContainer2 {
+		margin-top: 20%;
+		position: absolute;
+		margin-bottom: 10%;
+		right: 15%;
+	}
+	
+	#projectContainer3 {
+		transition: 0.5s;
+		position: relative;
+		left: -8%;
+		margin-top: 50%;
+		color: black;
+		z-index: 2;
+	}
+	
+	.projectContent {
+		font-size: initial;
+	}
+	
+	.projectArrows.left {
+		overflow: auto;
+		border-radius: 0% 20% 20% 0%;
+	}
+	
+	.projectArrows.right {
+		overflow: hidden;
+		border-radius: 20% 0% 0% 20%;
+	}
+	
+	.projectArrow {
+		margin-top: 0%;
+		width: 20px;
+		height: 20px;
+	}
+	
+	.sectionTitle {
+		font-family: "Oswald", sans-serif;
+		font-weight: bold;
+		font-size: 24px;
+	}
+	
+	.sectionContent {
+		font-size: 18px;
+	}
+	
+	.jobTitle {
+		font-size: 16px;
+	}
+	
+	#fullResume {
+		font-size: initial;
+	}
+}
+
+@media only screen and (max-width: 828px) {
+	#menuToggleContainer {
+		width: 5%;
+		padding-left: 2%;
+		padding-top: 4%;
+		z-index: 5;		
+	}
+	
+	#introContainer {
+		background-image: url("documents/headline16.jpg");
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: bottom;
+	}
+	
+	#intro {
+		padding: 160% 0% 12% 10%;
+	}
+}
+
+@media only screen and (max-width: 823px) {
+	#menuToggleContainer {
+		width: 5%;
+		padding-left: 2%;
+		padding-top: 4%;
+		z-index: 5;		
+	}
+	
+	#intro {
+		padding: 147% 0% 12% 10%;
+	}
+	
+	#projectsContainer {
+		height: 1500px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+	
+	.itemTitle {
+		font-size: 300%;
+	}
+	
+	#statementContent {
+		font-size: 150%;
+	}
+	
+	#intro {
+		padding: 120% 0% 12% 10%;
+	}
+	
+	#projectContent4 {
+		font-size: 180%;
+	}
+	
+	.projectTitle {
+		font-size: 150%;
+	}
+	
+	.projectContent {
+		font-size: 150%;
+	}
+	
+	.sectionTitle {
+		font-family: "Oswald", sans-serif;
+		font-weight: bold;
+		font-size: 220%;
+	}
+	
+	.sectionContent {
+		font-size: 200%;
+	}
+	
+	.jobTitle {
+		font-size: 80%;
+	}
+	
+	#fullResume {
+		font-size: 200%;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	#introContainer {
+		background-position: bottom;
+		background-attachment: scroll;
+	}
+	
+	#intro {
+		padding: 147% 0% 12% 10%;
+	}
+	
+	.arrowContainer {
+		width: 5%;
+	}
+	
+	.itemContent {
+		padding: 30% 20% 50% 20%;
+	}
+	
+	#projectsContainer {
+		height: 1400px;
+	}
+	
+	#resumeContainer {
+		background-image: url("documents/screen13.jpg");
+	}
+	
+	#resumeContainer .small {
+		display: initial;
+	}
+	
+	#resumeContainer .formatA {
+		display: none;
+	}
+	
+	.itemContainer, #statementContent, #projectContent4, .projectTitle, .projectContent, .sectionTitle, .sectionContent, .jobTitle, #fullResume {
+		font-size: initial;
+	}
+}
+
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+	#projectContainer3 {
+		top: 250%;
+	}
+	
+	#resumeContainer .small {
+		display: none;
+	}
+	
+	#resumeContainer .formatA {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+	#projectContainer3 {
+		top: 0%;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#resumeContainer .formatA {
+		display: none;
+	}
+	#resumeContainer .formatB {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	#resumeContainer .formatB {
+		display: none;
+	}
+	#resumeContainer .formatC {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	#resumeContainer .formatC {
+		display: none;
+	}
+	#resumeContainer .formatD {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+/**************END****************/
